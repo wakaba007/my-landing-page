@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventMasters - Premier Event Planning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-color: #FFF8E7;
+            --accent-color: #cc0000;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--cream-color);
+        }
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        .hero {
+            background: url('https://source.unsplash.com/random/1600x900?event') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding-top: 80px;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 8px;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section {
+            margin-bottom: 60px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: var(--text-color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .portfolio-item-content {
+            padding: 20px;
+        }
+        .portfolio-item h3 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+            color: var(--text-color);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #990000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EventMasters</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Creating Unforgettable Experiences</h1>
+            <p>Premier event planning for luxury weddings, brand experiences, and private celebrations</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About EventMasters</h2>
+            <p>We are world-renowned for planning and designing the most unforgettable and dreamy celebrations. Our brand specializes in producing luxury weddings, brand experiences, destination weddings, and private celebrations.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Luxury Weddings</li>
+                <li>Brand Experiences</li>
+                <li>Private Celebrations</li>
+                <li>Destination Events</li>
+                <li>Event Design and Styling</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://source.unsplash.com/random/400x300?wedding" alt="Luxury Wedding">
+                    <div class="portfolio-item-content">
+                        <h3>Elegant Beachfront Wedding</h3>
+                        <p>A breathtaking celebration for 200 guests with custom decor and gourmet dining.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://source.unsplash.com/random/400x300?corporate+event" alt="Corporate Event">
+                    <div class="portfolio-item-content">
+                        <h3>Annual Gala Dinner</h3>
+                        <p>A sophisticated evening for 500 corporate clients featuring world-class entertainment.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://source.unsplash.com/random/400x300?birthday+party" alt="Private Celebration">
+                    <div class="portfolio-item-content">
+                        <h3>Milestone Birthday Bash</h3>
+                        <p>An extravagant themed party with custom installations and surprise performances.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Ready to bring your event vision to life? Get in touch with our team of experts today!</p>
+            <p>Email: info@eventmasters.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <a href="mailto:info@eventmasters.com" class="btn">Send Email</a>
+        </section>
+    </div>
+</body>
+</html>
